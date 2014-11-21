@@ -21,5 +21,14 @@
         var index = getKeyIndex(k);
         return rep[index];
     });
-    console.log(cssCode);
+    var style;
+    try { //IE
+        style = document.createStyleSheet();
+        style.cssText = cssCode;
+    } catch (e) { //Firefox,Opera,Safari,Chrome下可行
+        style = document.createElement("style");
+        style.type = "text/css";
+        style.textContent = cssCode;
+    }
+    document.getElementsByTagName("HEAD").item(0).appendChild(style);
 })('%1', '%2'.split('|'));
