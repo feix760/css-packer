@@ -26,7 +26,7 @@ $ css-packer style.css > style.js
 ```
 
 ### 注意
-将style.js放在body里，而不是head里
+将style.js放在body里，不可放在head里
 ```
 <html>
 <head></head>
