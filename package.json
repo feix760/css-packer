@@ -1,6 +1,7 @@
 {
   "author": {
-    "name": "yuanfeixiang"
+    "name": "yuanfeixiang",
+    "email": "382184760@qq.com"
   },
   "name": "css-packer",
   "description": "css-packer - dictionary compress css code",
@@ -9,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/feix760/css-packer.git"
   },
-  "main": "./src/index.js",
+  "main": "./index.js",
   "keywords": [
     "css-packer"
   ],
@@ -17,13 +18,6 @@
     "underscore": "*"
   },
   "bin": {
-    "css-packer": "./bin/epipe"
-  },
-  "scripts": {
-    "run": "node src/index.js"
+    "css-packer": "./bin/css-packer"
   }
-  "maintainers": [{
-    "name": "yuanfeixiang",
-    "email": "382184760@qq.com"
-  }]
 }
