@@ -25,7 +25,7 @@
     try { //IE
         style = document.createStyleSheet();
         style.cssText = cssCode;
-    } catch (e) { //Firefox,Opera,Safari,Chrome下可行
+    } catch (e) { //Firefox,Opera,Safari,Chrome
         style = document.createElement("style");
         style.type = "text/css";
         style.textContent = cssCode;
