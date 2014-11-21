@@ -17,7 +17,7 @@
     "underscore": "*"
   },
   "bin": {
-    "csspacker": "./bin/epipe"
+    "css-packer": "./bin/epipe"
   },
   "scripts": {
     "run": "node src/index.js"

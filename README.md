@@ -1,7 +1,7 @@
-csspacker
+css-packer
 =====
 
-> csspacker是一个css字典压缩工具
+> css-packer是一个css字典压缩工具
 
 - 将css字典压缩成js文件
 
@@ -12,12 +12,12 @@ csspacker
 
 ### 安装
 
-> npm install csspacker -g
+> npm install css-packer -g
 
 ### 使用
 
-> csspacker file
+> css-packer file
 
-> var csspacker = require('csspacker')
-    csspacker(cssCode)
-    csspacker.packFile(filePath)
+> var cssPacker = require('css-packer')
+> cssPacker(cssCode)
+> cssPacker.packFile(filePath)
