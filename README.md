@@ -17,12 +17,17 @@ $ [sudo] npm install css-packer -g
 
 ### 使用
 ```
-var cssPacker = require('css-packer')
-cssPacker(cssCode)
-cssPacker.packFile(filePath)
+var cssPacker = require('css-packer');
+cssPacker(cssCode);
+cssPacker.packFile(filePath);
 ```
 ```
-css-packer style.css > style.js
+$ css-packer style.css > style.js
+```
+
+### 注意
+将style.js放在body里，而不是head里
+```
 <html>
 <head></head>
 <body>
@@ -30,6 +35,3 @@ css-packer style.css > style.js
 </body>
 </html>
 ```
-
-### 注意
-将style.js放在body里，而不是head里
