@@ -1,3 +1,5 @@
+var packer = require('./packer');
+
 /**
  * 命令行配置项
  *
@@ -20,7 +22,12 @@ cli.description = 'css packer';
  * @param {Object.<string, *>} opts
  */
 cli.main = function( args, opts ) {
-    console.log(arguments);
+    var inputFile = args[2];
+    if (!inputFile) {
+        console.log('please input a file');
+        return;
+    }
+    console.log(packer.packFile(inputFile));
 };
 
-exports.cli = cli;
+module.exports = cli;

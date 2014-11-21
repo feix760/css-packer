@@ -4,7 +4,7 @@ var Words = require('./Words');
 var config = require('./config');
 var util = require('./util');
 
-var jsCssTpl = fs.readFileSync('./jsCss.tpl').toString()
+var jsCssTpl = fs.readFileSync(__dirname + '/jsCss.tpl').toString()
 
 // main function 
 var Packer = function () {
