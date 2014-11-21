@@ -2,12 +2,12 @@
     function getKeyIndex(key) {
         var value = 0;
         var base = 1;
-        for (var i = key.length - 1; !!i; i--) {
+        for (var i = key.length - 1; i >= 0; i--) {
             var ch = key.charAt(i);
             var v;
-            if (/0-9/.test(ch)) {
+            if (/\d/.test(ch)) {
                 v = +ch;
-            } else if (/a-z/.test(ch)) {
+            } else if (/[a-z]/.test(ch)) {
                 v = ch.charCodeAt(0) - 97 + 10;
             } else {
                 v = ch.charCodeAt(0) - 65 + 36;
@@ -30,5 +30,5 @@
         style.type = "text/css";
         style.textContent = cssCode;
     }
-    document.getElementsByTagName("HEAD").item(0).appendChild(style);
-})('%1', '%2'.split('|'));
+    document.getElementsByTagName("HEAD")[0].appendChild(style);
+})('%0', '%1'.split('|'));
