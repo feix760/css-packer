@@ -1,7 +1,7 @@
 css-packer
 =====
 ### Deprecated !!!
-gzip  已经包含了LZ77算法，所以不推荐使用，只是徒劳
+gzip  已经包含了LZ77算法，所以不推荐使用
 
 ### Desc
 > css-packer是一个css字典压缩工具
