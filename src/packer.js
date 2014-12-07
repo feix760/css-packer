@@ -8,7 +8,7 @@ var jsCssTpl = fs.readFileSync(__dirname + '/jsCss.tpl').toString();
 
 // main function 
 var Packer = function () {
-    return Packer.pack.apply(this, arguments);
+    return Packer.pack.apply(Packer, arguments);
 };
 
 u.extend(Packer, {
